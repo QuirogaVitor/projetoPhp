@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserção de Notícias</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header>
+        <br>
+        <center>
+            <h2>
+                Inserção de Notícias
+            </h2>
+        </center>
+        <br>
+    </header>
+    
+    <main>
+
+        <div class="form">
+
+            <form action="conexao.php" method="post">
+                          
+                
+
+                <h3>
+                    Essa noticia é falsa? Sim(1) Não(0)
+                    <input type="number" name="fake" max="1" min="0">
+            
+            
+                </h3>
+            
+                <h3>
+                    A noticia foi verificada? Sim(1) e Não(2) 
+                    <input type="number" name="verificado" max="2" min="1">
+            
+                
+            
+                </h3>
+
+                <h3>
+                    Justificativa:
+                <textarea name="justificativa" id="areatext" style="max-width: 250px; max-height: 80px;min-width: 165px;min-height: 20px;"></textarea>
+                </h3>
+            
+                <h3>
+                    Conteudo da Noticia:
+                <textarea name="conteudo" id="areatext" style="max-width: 250px; max-height: 80px;min-width: 165px; min-height: 20px;"></textarea>
+                </h3>
+
+                <h3>
+                    Tipo da noticia: 
+                    <input type="number" name="tipo" max="4" min ="1">
+                </h3>
+
+                <input type="submit" id="button">
+                <input type="reset" value="Limpar" id="button">
+
+                
+
+            </form>
+
+        </div>
+
+    </main>
+</body>
+</html>
