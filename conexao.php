@@ -4,11 +4,12 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 
-
-    $servidor = "sql311.infinityfree.com";
-    $usuario = "if0_38369473";
-    $senha = "iBlT9uOUy6vU";
-    $banco = "if0_38369473_db_fakeanalyzer";
+    //área reservada para dados sensíveis
+    
+    $servidor = "";
+    $usuario = "";
+    $senha = "";
+    $banco = "";
 
     $conexao = new mysqli($servidor, $usuario, $senha, $banco);
 
